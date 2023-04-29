@@ -164,15 +164,15 @@ func _on_DeleteSaveButton_pressed():
 	if settings_file.file_exists("user://../Futureal/settings.json"):
 		if Directory.new().remove("user://../Futureal/F" + $TabContainer/Deleting/LevelNumberLineEdit.text) == OK:
 			$TabContainer/Deleting/AcceptDialog.window_title = "Delete result [OK]"
-			$TabContainer/Deleting/AcceptDialog.dialog_text = "Save" + $TabContainer/Deleting/LevelNumberLineEdit.text + " deleted"
+			$TabContainer/Deleting/AcceptDialog.dialog_text = "Save " + $TabContainer/Deleting/LevelNumberLineEdit.text + " deleted"
 			$TabContainer/Deleting/AcceptDialog.popup()
 		else:
 			$TabContainer/Deleting/AcceptDialog.window_title = "Delete result [FAILED]"
-			$TabContainer/Deleting/AcceptDialog.dialog_text = "Failed to delete save" + $TabContainer/Deleting/LevelNumberLineEdit.text
+			$TabContainer/Deleting/AcceptDialog.dialog_text = "Failed to delete save " + $TabContainer/Deleting/LevelNumberLineEdit.text
 			$TabContainer/Deleting/AcceptDialog.popup()
 	else:
 		$TabContainer/Deleting/AcceptDialog.window_title = "Delete result [FAILED]"
-		$TabContainer/Deleting/AcceptDialog.dialog_text = "No save" + $TabContainer/Deleting/LevelNumberLineEdit.text + " file"
+		$TabContainer/Deleting/AcceptDialog.dialog_text = "No save " + $TabContainer/Deleting/LevelNumberLineEdit.text + " file"
 		$TabContainer/Deleting/AcceptDialog.popup()
 	
 func _on_DeleteSettingsButton_pressed():
