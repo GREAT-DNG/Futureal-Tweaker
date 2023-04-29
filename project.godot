@@ -23,6 +23,7 @@ _global_script_class_icons={
 config/name="Futureal Tweaker"
 config/description="Tool for correcting Futureal settings and saves files"
 run/main_scene="res://Main.tscn"
+run/low_processor_mode=true
 boot_splash/show_image=false
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://Icon.png"

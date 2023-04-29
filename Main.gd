@@ -22,6 +22,8 @@ func _ready():
 		$TabContainer/Settings/ShowActionsCheckButton.pressed = data.show_actions
 	if data.has("show_trails"):
 		$TabContainer/Settings/ShowTrailsCheckButton.pressed = data.show_trails
+	if data.has("crt_effect"):
+		$TabContainer/Settings/CRTEffectCheckButton.pressed = data.crt_effect
 	
 # Saves
 func _on_SavesCheckButton_pressed():
@@ -132,6 +134,9 @@ func _on_SettingsCheckButton_pressed():
 	if !data.has("show_trails"):
 		incorrect_values.append("show_trails")
 		result = false
+	if !data.has("crt_effect"):
+		incorrect_values.append("crt_effect")
+		result = false
 		
 	if result:
 		$TabContainer/Settings/CheckAcceptDialog.window_title = "Check result [OK]"
@@ -141,7 +146,6 @@ func _on_SettingsCheckButton_pressed():
 		$TabContainer/Settings/CheckAcceptDialog.dialog_text = "Incorrect value(s): " + var2str(incorrect_values)
 		
 	$TabContainer/Settings/CheckAcceptDialog.popup()
-	pass
 	
 func _on_SettingsFixButton_pressed():
 	var data = {
@@ -149,7 +153,8 @@ func _on_SettingsFixButton_pressed():
 		"mute": $TabContainer/Settings/MuteCheckButton.pressed,
 		"autoreload": $TabContainer/Settings/AutoreloadCheckButton.pressed,
 		"show_actions": $TabContainer/Settings/ShowActionsCheckButton.pressed,
-		"show_trails": $TabContainer/Settings/ShowTrailsCheckButton.pressed}
+		"show_trails": $TabContainer/Settings/ShowTrailsCheckButton.pressed,
+		"crt_effect": $TabContainer/Settings/CRTEffectCheckButton.pressed}
 		
 	settings_file.open("user://../Futureal/settings.json", File.WRITE)
 	settings_file.store_line(to_json(data))

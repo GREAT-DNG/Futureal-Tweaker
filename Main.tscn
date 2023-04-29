@@ -122,38 +122,49 @@ text = "Fix"
 
 [node name="FullscreenCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
 margin_left = 6.0
-margin_top = 8.0
+margin_top = -2.0
 margin_right = 276.0
-margin_bottom = 48.0
+margin_bottom = 38.0
+pressed = true
 text = "Fullscreen"
 
 [node name="MuteCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
 margin_left = 6.0
-margin_top = 48.0
+margin_top = 38.0
 margin_right = 276.0
-margin_bottom = 88.0
+margin_bottom = 78.0
 text = "Mute"
 
 [node name="AutoreloadCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
 margin_left = 6.0
-margin_top = 88.0
+margin_top = 78.0
 margin_right = 276.0
-margin_bottom = 128.0
+margin_bottom = 118.0
 text = "Autoreload"
 
 [node name="ShowActionsCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
 margin_left = 6.0
-margin_top = 128.0
+margin_top = 118.0
 margin_right = 276.0
-margin_bottom = 168.0
+margin_bottom = 158.0
+pressed = true
 text = "Show actions"
 
 [node name="ShowTrailsCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
 margin_left = 6.0
-margin_top = 168.0
+margin_top = 158.0
 margin_right = 276.0
-margin_bottom = 208.0
+margin_bottom = 198.0
+pressed = true
 text = "Show trails"
+
+[node name="CRTEffectCheckButton" type="CheckButton" parent="Panel/TabContainer/Settings"]
+margin_left = 6.0
+margin_top = 198.0
+margin_right = 276.0
+margin_bottom = 238.0
+pressed = true
+text = "CRT effect"
 
 [node name="CheckAcceptDialog" type="AcceptDialog" parent="Panel/TabContainer/Settings"]
 anchor_left = 0.5
