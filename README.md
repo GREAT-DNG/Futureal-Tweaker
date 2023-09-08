@@ -1,4 +1,7 @@
 # Futureal Tweaker
+
+**:warning: This project is no longer supported due to no longer being needed. If something doesn't work after the update, write to [issues](https://github.com/GREAT-DNG/Futureal/issues).**
+
 ![FT](https://user-images.githubusercontent.com/64222535/235164090-e15af030-3457-49af-bab2-bfaf4a8628c0.png)
 
 Tool for correcting [Futureal](https://github.com/GREAT-DNG/Futureal) settings and saves files.
